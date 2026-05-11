@@ -4,7 +4,7 @@ defmodule Spatio.Mixfile do
   def project do
     [
       app: :spatio_sdk,
-      version: "0.0.1",
+      version: "0.0.2",
       description: "Elixir SDK for the SpatioAPI. Generated from the official OpenAPI spec.",
       package: [
         name: "spatio_sdk",
@@ -17,7 +17,7 @@ defmodule Spatio.Mixfile do
       start_permanent: Mix.env() == :prod,
       package: package(),
       description: """
-      The REST API that owns every resource in your Spatio workspace: notes, sheets, slides, tasks, calendar events, mail, chat, files, and contacts. SpatioMCP wraps this API; Spatio Desktop reads from it. You can call it directly from your own code.  All requests must be authenticated with a Personal Access Token (&#x60;Authorization: Bearer pat_...&#x60;) or an OAuth 2.1 access token, and use HTTPS.  Official SDKs (MIT, generated from this spec on every release):  - TypeScript: https://github.com/spatio-labs/spatio-ts (&#x60;npm install @spatio/sdk-ts&#x60;) - Python: https://github.com/spatio-labs/spatio-py (&#x60;pip install spatio-sdk&#x60;) - Go: https://github.com/spatio-labs/spatio-go (&#x60;go get github.com/spatio-labs/spatio-go&#x60;)  This specification is generated from the platform-service Go source on every push to &#x60;main&#x60;. The spec, not hand-written documentation, is the source of truth: server stubs and SDKs are generated from it, and any drift between the spec and the running service fails CI. 
+      The REST API that owns every resource in your Spatio workspace: notes, sheets, slides, tasks, calendar events, mail, chat, files, and contacts. SpatioMCP wraps this API; Spatio Desktop reads from it. You can call it directly from your own code.  All requests must be authenticated with a Personal Access Token (&#x60;Authorization: Bearer pat_...&#x60;) or an OAuth 2.1 access token, and use HTTPS.  Official SDKs (MIT, generated from this spec on every release):  - TypeScript: https://github.com/spatio-labs/spatio-ts (&#x60;npm install @spatio-labs/spatio-ts&#x60;) - Python: https://github.com/spatio-labs/spatio-py (&#x60;pip install spatio-sdk&#x60;) - Go: https://github.com/spatio-labs/spatio-go (&#x60;go get github.com/spatio-labs/spatio-go&#x60;)  This specification is generated from the platform-service Go source on every push to &#x60;main&#x60;. The spec, not hand-written documentation, is the source of truth: server stubs and SDKs are generated from it, and any drift between the spec and the running service fails CI. 
       """,
       deps: deps()
     ]

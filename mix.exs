@@ -4,7 +4,14 @@ defmodule Spatio.Mixfile do
   def project do
     [
       app: :spatio_sdk,
-      version: "1.0.0",
+      version: "0.0.1",
+      description: "Elixir SDK for the SpatioAPI. Generated from the official OpenAPI spec.",
+      package: [
+        name: "spatio_sdk",
+        licenses: ["MIT"],
+        links: %{"GitHub" => "https://github.com/spatio-labs/spatio-elixir"},
+        maintainers: ["Spatio Labs"],
+      ],
       elixir: "~> 1.18",
       build_embedded: Mix.env() == :prod,
       start_permanent: Mix.env() == :prod,
